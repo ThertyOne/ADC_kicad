@@ -4775,7 +4775,7 @@
 	)
 	(rectangle
 		(start 12.7 67.31)
-		(end 95.25 99.06)
+		(end 96.52 104.14)
 		(stroke
 			(width 0)
 			(type default)
@@ -4821,7 +4821,7 @@
 	)
 	(text "SYGNAŁ WEJŚCIOWY"
 		(exclude_from_sim no)
-		(at 76.2 97.79 0)
+		(at 76.454 99.568 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4851,6 +4851,16 @@
 			(justify left)
 		)
 		(uuid "489299d4-1928-4452-926a-f982e93fc18b")
+	)
+	(text "dodać diody TVS \ni/lub bezpieczniki"
+		(exclude_from_sim no)
+		(at 35.56 16.256 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "75ecdf40-1656-4a8d-b721-4dc3d8e701e1")
 	)
 	(text "V_REF = 1.188V (napięcie referencyjne układu TPS7A4901),\nV_OUT = 5V (założone napięcie wyjściowe),"
 		(exclude_from_sim no)
@@ -4896,6 +4906,16 @@
 		)
 		(uuid "a1bf8cd0-8207-408c-8e83-806b94b287ff")
 	)
+	(text "filtr górnoprzepustowy f_g = 48 Hz"
+		(exclude_from_sim no)
+		(at 78.232 102.362 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "ae279e11-ebce-4bec-b0d5-78d7a6d97fd6")
+	)
 	(text "KONDENSATORY"
 		(exclude_from_sim no)
 		(at 257.302 36.83 0)
@@ -4909,7 +4929,7 @@
 	)
 	(text "t_ss [ms] = 1,4 * C_NR/SS [nF]\nt_ss = 1,4 * 10nF = 14 ms"
 		(exclude_from_sim no)
-		(at 78.232 50.546 0)
+		(at 78.486 53.086 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6289,7 +6309,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10n"
+		(property "Value" "1u"
 			(at 283.972 25.146 90)
 			(effects
 				(font
@@ -7367,7 +7387,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10n"
+		(property "Value" "1u"
 			(at 273.812 25.146 90)
 			(effects
 				(font
