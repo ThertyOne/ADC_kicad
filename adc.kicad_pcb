@@ -134,7 +134,7 @@
 	(net 52 "Net-(U6-+)")
 	(net 53 "Net-(U2-AINM)")
 	(net 54 "Net-(U2-AINP)")
-	(net 55 "Net-(J2-Pin_1)")
+	(net 55 "Net-(U4-+)")
 	(net 56 "Net-(U9-NE{slash}SS)")
 	(net 57 "Net-(U9-FB)")
 	(net 58 "Net-(U7-Vout)")
@@ -154,10 +154,15 @@
 	(net 72 "unconnected-(U9-NC-Pad7)")
 	(net 73 "unconnected-(U9-DNC-Pad3)")
 	(net 74 "Net-(R14-Pad2)")
+	(net 75 "Net-(D1-A1)")
+	(net 76 "+5")
+	(net 77 "Net-(D2-K)")
+	(net 78 "DIODE_SIGNAL")
+	(net 79 "Net-(U4--)")
 	(footprint "moja_biblioteka:cap_1206"
 		(layer "F.Cu")
 		(uuid "0a0fc85d-a0ab-4cff-8421-3f1097c9652c")
-		(at 7.75 21.55)
+		(at 42.5 64.25)
 		(property "Reference" "C6"
 			(at 0 -0.5 0)
 			(unlocked yes)
@@ -301,7 +306,7 @@
 	(footprint "Package_TO_SOT_SMD:SOT-23"
 		(layer "F.Cu")
 		(uuid "114328dc-031d-4d9a-af2c-56b5de701da8")
-		(at 57.5 52.5)
+		(at 74.5625 58)
 		(descr "SOT, 3 Pin (https://www.jedec.org/system/files/docs/to-236h.pdf variant AB), generated with kicad-footprint-generator ipc_gullwing_generator.py")
 		(tags "SOT TO_SOT_SMD")
 		(property "Reference" "U3"
@@ -567,7 +572,7 @@
 	(footprint "moja_biblioteka:res_1206"
 		(layer "F.Cu")
 		(uuid "12d55b45-0dd0-4757-9088-48ec686b08bb")
-		(at 5 25.55)
+		(at 115 85.4)
 		(property "Reference" "R9"
 			(at -2 -3 0)
 			(unlocked yes)
@@ -711,7 +716,7 @@
 	(footprint "moja_biblioteka:cap_1206"
 		(layer "F.Cu")
 		(uuid "1549e6dc-9714-4da8-838e-97bcf5964660")
-		(at 7.75 6.35)
+		(at 42.5 49.05)
 		(property "Reference" "C2"
 			(at 0 -0.5 0)
 			(unlocked yes)
@@ -855,7 +860,7 @@
 	(footprint "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
 		(layer "F.Cu")
 		(uuid "1584580a-27a1-476e-b22d-199a84798188")
-		(at 30.225 2.855)
+		(at 64.975 45.555)
 		(descr "SOIC, 8 Pin (JEDEC MS-012AA, https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/soic_narrow-r/r_8.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py")
 		(tags "SOIC SO")
 		(property "Reference" "U5"
@@ -1102,7 +1107,7 @@
 			(size 1.95 0.6)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 50 "+3")
+			(net 76 "+5")
 			(pinfunction "V_{S+}")
 			(pintype "power_in")
 			(uuid "3df8f8f6-1f5c-47e3-94bb-80d51b3ab783")
@@ -1140,7 +1145,7 @@
 			(size 1.95 0.6)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 50 "+3")
+			(net 76 "+5")
 			(pinfunction "~{PD}")
 			(pintype "input")
 			(uuid "f3af4fdb-9306-476c-8ed9-1df0460f9ce6")
@@ -1170,7 +1175,7 @@
 	(footprint "OPA320:DBV5"
 		(layer "F.Cu")
 		(uuid "172ed5b8-d4cc-463d-8e64-0211ca25987c")
-		(at 51.5106 78.3042)
+		(at 73.7606 85.5292)
 		(tags "OPA320AIDBVR ")
 		(property "Reference" "U4"
 			(at 0 0 0)
@@ -1631,8 +1636,7 @@
 			(at -1.1938 -0.950001)
 			(size 1.4732 0.5588)
 			(layers "F.Cu" "F.Paste" "F.Mask")
-			(net 46 "Net-(U4-IN-)")
-			(pinfunction "OUT")
+			(net 78 "DIODE_SIGNAL")
 			(pintype "output")
 			(uuid "c2601bf8-b44b-4eb9-9a2d-0fa67a678610")
 		)
@@ -1649,8 +1653,8 @@
 			(at -1.1938 0.950001)
 			(size 1.4732 0.5588)
 			(layers "F.Cu" "F.Paste" "F.Mask")
-			(net 45 "Net-(J1-Pin_1)")
-			(pinfunction "IN+")
+			(net 55 "Net-(U4-+)")
+			(pinfunction "+")
 			(pintype "input")
 			(uuid "27be76d5-1be9-4b88-ba19-8d3ee885e7ec")
 		)
@@ -1658,8 +1662,8 @@
 			(at 1.1938 0.950001)
 			(size 1.4732 0.5588)
 			(layers "F.Cu" "F.Paste" "F.Mask")
-			(net 46 "Net-(U4-IN-)")
-			(pinfunction "IN-")
+			(net 79 "Net-(U4--)")
+			(pinfunction "-")
 			(pintype "input")
 			(uuid "cfdb385e-7df3-42e9-8913-8ef6c49f480c")
 		)
@@ -1667,7 +1671,7 @@
 			(at 1.1938 -0.950001)
 			(size 1.4732 0.5588)
 			(layers "F.Cu" "F.Paste" "F.Mask")
-			(net 50 "+3")
+			(net 76 "+5")
 			(pinfunction "V+")
 			(pintype "power_in")
 			(uuid "fcd3c707-7cb5-4e0b-9718-e2d26fadfa1b")
@@ -1676,7 +1680,7 @@
 	(footprint "moja_biblioteka:cap_1206"
 		(layer "F.Cu")
 		(uuid "1d2a54f7-2ede-459f-95f4-4604bec5cd22")
-		(at 20.75 13.95)
+		(at 55.5 56.65)
 		(property "Reference" "C17"
 			(at 0 -0.5 0)
 			(unlocked yes)
@@ -1801,7 +1805,7 @@
 			(size 1.5 2.5)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 50 "+3")
+			(net 76 "+5")
 			(pintype "input")
 			(thermal_bridge_angle 45)
 			(uuid "f06b7bcb-1202-4c40-9c05-82a71a29130f")
@@ -1817,10 +1821,154 @@
 			(uuid "82e9e4ba-e0fa-4813-9483-2ab2fffed4b6")
 		)
 	)
+	(footprint "moja_biblioteka:res_1206"
+		(layer "F.Cu")
+		(uuid "2275a711-5fcd-4c2c-929f-043434fbafca")
+		(at 115.5 42.075)
+		(property "Reference" "R1"
+			(at -2 -3 0)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(uuid "4ca5d33f-a6c9-4c4d-aeec-87d136fba3bb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "Value" "100"
+			(at 0 1 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "93954bb9-4b09-4cab-80db-bcea2c2ea25e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Footprint" "moja_biblioteka:res_1206"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "63c926d9-40b5-434a-8c57-7dbafcbf9d22")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "583cc4af-cca8-4977-9b84-d1cbb0f623bf")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "819719de-c49a-46b4-a8bf-2c16ba9e6502")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/f1241f59-781d-4c18-b4f9-2b706347ea4a")
+		(sheetname "Root")
+		(sheetfile "adc.kicad_sch")
+		(attr smd)
+		(fp_line
+			(start -4 -2)
+			(end 0 -2)
+			(stroke
+				(width 0.2)
+				(type default)
+			)
+			(layer "F.Cu")
+			(uuid "52fb7fb6-50ed-43a7-af3a-149b9d617d73")
+		)
+		(fp_line
+			(start -4 0)
+			(end -4 -2)
+			(stroke
+				(width 0.2)
+				(type default)
+			)
+			(layer "F.Cu")
+			(uuid "c503168b-9c22-494b-8335-74ae851ca696")
+		)
+		(fp_line
+			(start 0 -2)
+			(end 0 0)
+			(stroke
+				(width 0.2)
+				(type default)
+			)
+			(layer "F.Cu")
+			(uuid "2e378f01-b180-4f89-8ddd-41380e70dda0")
+		)
+		(fp_line
+			(start 0 0)
+			(end -4 0)
+			(stroke
+				(width 0.2)
+				(type default)
+			)
+			(layer "F.Cu")
+			(uuid "ca237629-0a38-4285-aadf-3739419f2bf0")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 2.5 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "0aa94583-bd99-4d85-a618-208cefba270e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd roundrect
+			(at 0 -1)
+			(size 2 2)
+			(layers "F.Cu" "F.Paste" "F.Mask")
+			(roundrect_rratio 0.25)
+			(net 55 "Net-(U4-+)")
+			(pintype "input")
+			(thermal_bridge_angle 45)
+			(uuid "fd756d07-d5da-4afa-8163-62ea26784126")
+		)
+		(pad "2" smd roundrect
+			(at -4 -1)
+			(size 2 2)
+			(layers "F.Cu" "F.Paste" "F.Mask")
+			(roundrect_rratio 0.25)
+			(net 2 "GND")
+			(pintype "output")
+			(thermal_bridge_angle 45)
+			(uuid "9b8abd89-ca84-417d-9280-788b4d440532")
+		)
+	)
 	(footprint "moja_biblioteka:cap_1206"
 		(layer "F.Cu")
 		(uuid "255f2f7f-3648-43d7-a279-24f0a0e64ece")
-		(at 7.75 10.15)
+		(at 42.5 52.85)
 		(property "Reference" "C3"
 			(at 0 -0.5 0)
 			(unlocked yes)
@@ -1964,7 +2112,7 @@
 	(footprint "moja_biblioteka:res_1206"
 		(layer "F.Cu")
 		(uuid "2b424508-59b3-435e-8611-1f78d04baa97")
-		(at 5 2.1)
+		(at 115 61.95)
 		(property "Reference" "R2"
 			(at -2 -3 0)
 			(unlocked yes)
@@ -2108,7 +2256,7 @@
 	(footprint "moja_biblioteka:cap_1206"
 		(layer "F.Cu")
 		(uuid "2cd39cc1-3ed6-4d02-82f8-0e9fecfe4ef3")
-		(at 43.5 75.65)
+		(at 65.75 82.875)
 		(property "Reference" "C5"
 			(at 0 -0.5 0)
 			(unlocked yes)
@@ -2251,7 +2399,7 @@
 	(footprint "moja_biblioteka:cap_1206"
 		(layer "F.Cu")
 		(uuid "31eaa022-0372-4138-bf45-7a136e99a0c3")
-		(at 7.75 13.95)
+		(at 42.5 56.65)
 		(property "Reference" "C4"
 			(at 0 -0.5 0)
 			(unlocked yes)
@@ -2265,7 +2413,7 @@
 			)
 		)
 		(property "Value" "10u"
-			(at 0 1 0)
+			(at 75.25 18.15 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "c31b46f7-ca66-46d6-a7b9-ab61f81506db")
@@ -2315,7 +2463,6 @@
 				)
 			)
 		)
-		(path "/cc56e8f1-56d6-476e-a3b8-7a47839ec876")
 		(sheetname "Root")
 		(sheetfile "adc.kicad_sch")
 		(attr smd)
@@ -2395,7 +2542,7 @@
 	(footprint "moja_biblioteka:cap_1206"
 		(layer "F.Cu")
 		(uuid "33b5bb45-090b-40d6-a82b-7cee9028da38")
-		(at 63 70.65)
+		(at 72.5 68.65)
 		(property "Reference" "C4"
 			(at 0 -0.5 0)
 			(unlocked yes)
@@ -2538,7 +2685,7 @@
 	(footprint "moja_biblioteka:cap_1206"
 		(layer "F.Cu")
 		(uuid "3b680004-ac75-4df4-b9db-87d87064580c")
-		(at 14.25 10.15)
+		(at 49 52.85)
 		(property "Reference" "C10"
 			(at 0 -0.5 0)
 			(unlocked yes)
@@ -2682,7 +2829,7 @@
 	(footprint "moja_biblioteka:res_1206"
 		(layer "F.Cu")
 		(uuid "4071f2db-b929-4c53-81aa-cb1f1188c558")
-		(at 5 18.85)
+		(at 115 78.7)
 		(property "Reference" "R7"
 			(at -2 -3 0)
 			(unlocked yes)
@@ -2826,7 +2973,7 @@
 	(footprint "moja_biblioteka:res_1206"
 		(layer "F.Cu")
 		(uuid "40fcf05a-839f-47a5-b70f-8cc3e0ea196b")
-		(at 5 22.2)
+		(at 115 82.05)
 		(property "Reference" "R8"
 			(at -2 -3 0)
 			(unlocked yes)
@@ -2970,7 +3117,7 @@
 	(footprint "moja_biblioteka:res_1206"
 		(layer "F.Cu")
 		(uuid "49afc931-1669-46e0-8281-53b044401383")
-		(at 5 12.15)
+		(at 115 72)
 		(property "Reference" "R5"
 			(at -2 -3 0)
 			(unlocked yes)
@@ -3114,7 +3261,7 @@
 	(footprint "moja_biblioteka:res_1206"
 		(layer "F.Cu")
 		(uuid "4c652e8d-027b-4611-98a8-7e124d565456")
-		(at 5 8.8)
+		(at 115 68.65)
 		(property "Reference" "R4"
 			(at -2 -3 0)
 			(unlocked yes)
@@ -3255,10 +3402,128 @@
 			(uuid "bbc4b01f-ce58-42f7-9398-a898a6c2a764")
 		)
 	)
+	(footprint "moja_biblioteka:LED_SMD"
+		(layer "F.Cu")
+		(uuid "51646755-99f8-4999-9c5f-075fc0411c4b")
+		(at 118.05 48.875)
+		(property "Reference" "D2"
+			(at -1.5 -1.85 0)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(uuid "b0e5715a-2a98-4f27-8870-a27e432f99ab")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 0 1 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "7583c2f8-1caf-417f-ba27-facc176a01c8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Footprint" "moja_biblioteka:LED_SMD"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ac0391d7-d659-4e9d-87fc-8f3d9a28c079")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "258a92b8-9b8c-4b5e-a096-81431bef6b12")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ede6917c-2df1-499e-9224-99be6fb658e2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
+		(path "/93089f3d-7969-44c9-b9ee-22cd7c14091e")
+		(sheetname "Root")
+		(sheetfile "adc.kicad_sch")
+		(attr smd)
+		(fp_rect
+			(start -0.5 -0.5)
+			(end 2.1 0.5)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(fill none)
+			(layer "F.SilkS")
+			(uuid "8bbed451-4b36-4b5e-8cd9-443adaf70350")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 2.5 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "7e9cc9e5-5318-4fa0-b089-753ec9bda7d3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd roundrect
+			(at 0 0)
+			(size 0.8 0.8)
+			(layers "F.Cu" "F.Paste" "F.Mask")
+			(roundrect_rratio 0.25)
+			(net 77 "Net-(D2-K)")
+			(pinfunction "K")
+			(pintype "passive")
+			(thermal_bridge_angle 45)
+			(uuid "fd60016d-f5ed-464e-a2cf-9101ef7367ba")
+		)
+		(pad "2" smd roundrect
+			(at 1.6 0)
+			(size 0.8 0.8)
+			(layers "F.Cu" "F.Paste" "F.Mask")
+			(roundrect_rratio 0.25)
+			(net 76 "+5")
+			(pinfunction "A")
+			(pintype "passive")
+			(thermal_bridge_angle 45)
+			(uuid "a26f8c65-ea2d-4cc8-9a42-64c646560308")
+		)
+	)
 	(footprint "moja_biblioteka:res_1206"
 		(layer "F.Cu")
 		(uuid "5496675e-4844-4f22-ae85-52d501f84432")
-		(at 5 5.45)
+		(at 115 65.3)
 		(property "Reference" "R3"
 			(at -2 -3 0)
 			(unlocked yes)
@@ -3399,13 +3664,298 @@
 			(uuid "e9611b1c-8170-44ad-a284-30a74aa72649")
 		)
 	)
+	(footprint "Diode_SMD:D_SMA"
+		(layer "F.Cu")
+		(uuid "5ac08d6e-f602-49c2-a43b-60ba032f9598")
+		(at 121.07 41.75)
+		(descr "Diode SMA (DO-214AC)")
+		(tags "Diode SMA (DO-214AC)")
+		(property "Reference" "D1"
+			(at 0 -2.5 0)
+			(layer "F.SilkS")
+			(uuid "6f1d1c74-84a1-4dde-a1b2-a57d0092a3f9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "SMAJ12A"
+			(at 0 2.6 0)
+			(layer "F.Fab")
+			(uuid "a994bab9-c2d1-4fa8-8fea-51e6931220cb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SMA"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1b9c4fc6-a2d6-48ff-b27e-d52fd18fd640")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.littelfuse.com/media?resourcetype=datasheets&itemid=75e32973-b177-4ee3-a0ff-cedaf1abdb93&filename=smaj-datasheet"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8d47e7f5-9322-40cd-b9a6-f148affff96e")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "400W unidirectional Transient Voltage Suppressor, 12.0Vr, SMA(DO-214AC)"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cab703fa-1429-49b7-93e3-95ef0ebabf73")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "D*SMA*")
+		(path "/a2fe02fb-7b0d-4d0d-878f-d0ad2aeae9c0")
+		(sheetname "Root")
+		(sheetfile "adc.kicad_sch")
+		(attr smd)
+		(fp_line
+			(start -3.51 -1.65)
+			(end -3.51 1.65)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "f05218e8-47b5-446b-a7d3-0c3a54d9b847")
+		)
+		(fp_line
+			(start -3.51 -1.65)
+			(end 2 -1.65)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "0283bd51-1e0e-4b33-a001-39207dc4538d")
+		)
+		(fp_line
+			(start -3.51 1.65)
+			(end 2 1.65)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "44bb103d-5ce6-4677-bd7e-d51dc12394fe")
+		)
+		(fp_line
+			(start -3.5 -1.75)
+			(end 3.5 -1.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "f4e8b9fe-f3d8-4de7-95cf-92d1f5628bcc")
+		)
+		(fp_line
+			(start -3.5 1.75)
+			(end -3.5 -1.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "67e40720-6da1-46b4-9621-2820f3f1790f")
+		)
+		(fp_line
+			(start 3.5 -1.75)
+			(end 3.5 1.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "c3c73b4c-16b6-4c38-abed-8c975d2d3eb7")
+		)
+		(fp_line
+			(start 3.5 1.75)
+			(end -3.5 1.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "759a1e15-d862-40fa-9f8e-73c3adb98ecc")
+		)
+		(fp_line
+			(start -2.3 1.5)
+			(end -2.3 -1.5)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "19594afc-2d69-4d72-8dbf-de6d0fc811a8")
+		)
+		(fp_line
+			(start -0.64944 -0.79908)
+			(end -0.64944 0.80112)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "c3b10665-1bfe-43e9-9f65-df39457c46c9")
+		)
+		(fp_line
+			(start -0.64944 0.00102)
+			(end -1.55114 0.00102)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "7725fdf3-e566-4588-a9f9-fbd01ddec336")
+		)
+		(fp_line
+			(start -0.64944 0.00102)
+			(end 0.50118 -0.79908)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "24982afb-eeea-49e1-8baa-2ba9f554e2b0")
+		)
+		(fp_line
+			(start -0.64944 0.00102)
+			(end 0.50118 0.75032)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "d826ca17-f32a-4129-aec8-908bfeaaf863")
+		)
+		(fp_line
+			(start 0.50118 0.00102)
+			(end 1.4994 0.00102)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "77d2e23e-1f89-4b13-b625-73a4ade4aa68")
+		)
+		(fp_line
+			(start 0.50118 0.75032)
+			(end 0.50118 -0.79908)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "190a9442-a924-4815-98d8-7cf78d0547ce")
+		)
+		(fp_line
+			(start 2.3 -1.5)
+			(end -2.3 -1.5)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "65a07657-7478-4e75-a74b-ae729c3a95b9")
+		)
+		(fp_line
+			(start 2.3 -1.5)
+			(end 2.3 1.5)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "6601426a-d3a5-413d-a639-84b52d2623ac")
+		)
+		(fp_line
+			(start 2.3 1.5)
+			(end -2.3 1.5)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "859d4da9-0165-4252-9ca2-83c5988012f4")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 -2.5 0)
+			(layer "F.Fab")
+			(uuid "4bee92a6-0621-462c-b535-8441ddad4d25")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd roundrect
+			(at -2 0)
+			(size 2.5 1.8)
+			(layers "F.Cu" "F.Paste" "F.Mask")
+			(roundrect_rratio 0.1388888889)
+			(net 75 "Net-(D1-A1)")
+			(pinfunction "A1")
+			(pintype "passive")
+			(uuid "35de4913-4ab8-4df0-a69d-8bf610427629")
+		)
+		(pad "2" smd roundrect
+			(at 2 0)
+			(size 2.5 1.8)
+			(layers "F.Cu" "F.Paste" "F.Mask")
+			(roundrect_rratio 0.1388888889)
+			(net 2 "GND")
+			(pinfunction "A2")
+			(pintype "passive")
+			(uuid "e17e74d8-565c-4d50-b8cf-c93c5bd1133b")
+		)
+		(model "${KICAD8_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SMA.wrl"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
 	(footprint "footprints:ADS8881"
 		(layer "F.Cu")
 		(uuid "5b42763b-05b8-4218-875a-a26f9e1b84de")
-		(at 70.5 47)
+		(at 74.5 47)
 		(tags "ADS8881CDGS ")
 		(property "Reference" "U2"
-			(at 0.8 -2.4 0)
+			(at 3.8 -1.9 0)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "a1dd58be-085a-4a64-90e4-64a7e4088611")
@@ -4944,7 +5494,7 @@
 		)
 		(fp_arc
 			(start 1.375443 -1.484532)
-			(mid 1.46252 -1.447374)
+			(mid 1.462525 -1.44738)
 			(end 1.499675 -1.360299)
 			(stroke
 				(width 0.127)
@@ -4965,7 +5515,7 @@
 			(uuid "87f1e284-4274-4bb7-94b5-a53ed3c8c23f")
 		)
 		(fp_text user "u"
-			(at -2.921 -2.5908 0)
+			(at 0.079 -2.0908 0)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "27c07a02-801e-44c1-8935-d7eab9674cba")
@@ -4977,7 +5527,7 @@
 			)
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 0)
+			(at 3 0.5 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "36dc32df-cbd1-4012-b4e0-7ca27dde343b")
@@ -5082,7 +5632,7 @@
 	(footprint "moja_biblioteka:res_1206"
 		(layer "F.Cu")
 		(uuid "5dd1dda2-1573-4044-b281-4f3d6d42d03a")
-		(at 5 15.5)
+		(at 115 75.35)
 		(property "Reference" "R6"
 			(at -2 -3 0)
 			(unlocked yes)
@@ -5226,7 +5776,7 @@
 	(footprint "moja_biblioteka:cap_1206"
 		(layer "F.Cu")
 		(uuid "6ab7e3b8-295f-42a6-8ed4-67022d7058b1")
-		(at 7.75 17.75)
+		(at 42.5 60.45)
 		(property "Reference" "C5"
 			(at 0 -0.5 0)
 			(unlocked yes)
@@ -5240,7 +5790,7 @@
 			)
 		)
 		(property "Value" "10u"
-			(at 0 1 0)
+			(at 75.25 18.15 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "3e46115a-5175-4090-a00d-5fc0c5d5e3e8")
@@ -5370,7 +5920,7 @@
 	(footprint "moja_biblioteka:cap_1206"
 		(layer "F.Cu")
 		(uuid "704fc423-01cf-4883-94b6-5a9ce97e6e7b")
-		(at 7.75 2.55)
+		(at 42.5 45.25)
 		(property "Reference" "C1"
 			(at 0 -0.5 0)
 			(unlocked yes)
@@ -5513,8 +6063,152 @@
 	)
 	(footprint "moja_biblioteka:cap_1206"
 		(layer "F.Cu")
+		(uuid "70a1e733-a855-4c3e-8c8d-ae358c2bce99")
+		(at 118.25 47.075)
+		(property "Reference" "C4"
+			(at 0 -0.5 0)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(uuid "de52b569-4c69-403f-b05c-2819e51c5d49")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "Value" "33u"
+			(at 0 1 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "d46b568a-8c82-4347-9875-32dec56dfc1d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Footprint" "moja_biblioteka:cap_1206"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9c569b74-e5ac-4062-98bc-81fe17d8db4d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a97f79c0-9f93-4c7c-87ff-73fe2c1874ae")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7fa9b20b-fd4d-4d28-bb8c-580b8449287f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/c9fd03f8-d2be-44a1-984b-2a6c847ac074")
+		(sheetname "Root")
+		(sheetfile "adc.kicad_sch")
+		(attr smd)
+		(fp_line
+			(start 0 -2.5)
+			(end 0 0)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "F.SilkS")
+			(uuid "e1253a2a-a98e-48aa-867a-6723db2b09d0")
+		)
+		(fp_line
+			(start 0 0)
+			(end 4 0)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "F.SilkS")
+			(uuid "95cf5626-cace-41ba-b356-d2c81e466e4a")
+		)
+		(fp_line
+			(start 4 -2.5)
+			(end 0 -2.5)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "F.SilkS")
+			(uuid "5acd49ca-1a27-45e9-ac9d-77ea0dfd314a")
+		)
+		(fp_line
+			(start 4 0)
+			(end 4 -2.5)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "F.SilkS")
+			(uuid "5663059e-8702-40d9-ae9a-3681b8dea04c")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 2.5 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "d8573cea-dacd-432b-a457-2f8743548d18")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd roundrect
+			(at 4 -1.25)
+			(size 1.5 2.5)
+			(layers "F.Cu" "F.Paste" "F.Mask")
+			(roundrect_rratio 0.25)
+			(net 45 "Net-(J1-Pin_1)")
+			(pintype "input")
+			(thermal_bridge_angle 45)
+			(uuid "ade5f9b8-4baf-4a5c-9f11-8a4daf08f886")
+		)
+		(pad "2" smd roundrect
+			(at 0 -1.25)
+			(size 1.5 2.5)
+			(layers "F.Cu" "F.Paste" "F.Mask")
+			(roundrect_rratio 0.25)
+			(net 55 "Net-(U4-+)")
+			(pintype "output")
+			(thermal_bridge_angle 45)
+			(uuid "fbeb0d21-4526-41b6-9010-8198d7453b3a")
+		)
+	)
+	(footprint "moja_biblioteka:cap_1206"
+		(layer "F.Cu")
 		(uuid "75b5144b-f530-43b2-9585-0ab537905d09")
-		(at 14.25 13.95)
+		(at 49 56.65)
 		(property "Reference" "C11"
 			(at 0 -0.5 0)
 			(unlocked yes)
@@ -5578,7 +6272,6 @@
 				)
 			)
 		)
-		(path "/63e4d468-776a-4f0c-a9fc-67a0d721fa63")
 		(sheetname "Root")
 		(sheetfile "adc.kicad_sch")
 		(attr smd)
@@ -5658,7 +6351,7 @@
 	(footprint "moja_biblioteka:cap_1206"
 		(layer "F.Cu")
 		(uuid "7a36202b-c001-4c80-91b6-6f88c7845518")
-		(at 20.75 6.35)
+		(at 55.5 49.05)
 		(property "Reference" "C15"
 			(at 0 -0.5 0)
 			(unlocked yes)
@@ -5802,7 +6495,7 @@
 	(footprint "moja_biblioteka:cap_1206"
 		(layer "F.Cu")
 		(uuid "839e82a9-9102-477f-bc05-49d11ed7f274")
-		(at 20.75 10.15)
+		(at 55.5 52.85)
 		(property "Reference" "C16"
 			(at 0 -0.5 0)
 			(unlocked yes)
@@ -5927,7 +6620,7 @@
 			(size 1.5 2.5)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 50 "+3")
+			(net 76 "+5")
 			(pintype "input")
 			(thermal_bridge_angle 45)
 			(uuid "4dafec5c-75a3-4109-b5e2-eca0c0a924e0")
@@ -5945,8 +6638,152 @@
 	)
 	(footprint "moja_biblioteka:res_1206"
 		(layer "F.Cu")
+		(uuid "848fea66-9df3-4769-b6a0-121a28837935")
+		(at 115.5 52.125)
+		(property "Reference" "R18"
+			(at -2 -3 0)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(uuid "110abbd5-b8e3-429d-8842-fc51734171cf")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 0 1 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "5f0ac94c-b7b8-445e-9bf1-74d76f936df9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Footprint" "moja_biblioteka:res_1206"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "88ccd3b2-b177-4392-89ae-c9f9042f53de")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6f5324b0-dd64-404c-bcd5-bdd2fb02d828")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "07548710-c71c-4b11-a254-da583995671b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/06d546cd-432f-4711-a1b1-aa86b869e0ee")
+		(sheetname "Root")
+		(sheetfile "adc.kicad_sch")
+		(attr smd)
+		(fp_line
+			(start -4 -2)
+			(end 0 -2)
+			(stroke
+				(width 0.2)
+				(type default)
+			)
+			(layer "F.Cu")
+			(uuid "7c95aab8-d595-4881-945a-885f719b57ae")
+		)
+		(fp_line
+			(start -4 0)
+			(end -4 -2)
+			(stroke
+				(width 0.2)
+				(type default)
+			)
+			(layer "F.Cu")
+			(uuid "70eb4f2b-115f-4581-ad65-28b0f4493786")
+		)
+		(fp_line
+			(start 0 -2)
+			(end 0 0)
+			(stroke
+				(width 0.2)
+				(type default)
+			)
+			(layer "F.Cu")
+			(uuid "745e0351-d80f-4780-b603-34efb8d45d81")
+		)
+		(fp_line
+			(start 0 0)
+			(end -4 0)
+			(stroke
+				(width 0.2)
+				(type default)
+			)
+			(layer "F.Cu")
+			(uuid "af8a2e64-0bf5-47ca-9632-f0523bdfd701")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 2.5 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "45e5b74d-462a-4e18-bcb5-e673d79deffc")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd roundrect
+			(at 0 -1)
+			(size 2 2)
+			(layers "F.Cu" "F.Paste" "F.Mask")
+			(roundrect_rratio 0.25)
+			(net 78 "DIODE_SIGNAL")
+			(pintype "input")
+			(thermal_bridge_angle 45)
+			(uuid "651381e9-27a5-4089-856c-efdaf6c8f137")
+		)
+		(pad "2" smd roundrect
+			(at -4 -1)
+			(size 2 2)
+			(layers "F.Cu" "F.Paste" "F.Mask")
+			(roundrect_rratio 0.25)
+			(net 79 "Net-(U4--)")
+			(pintype "output")
+			(thermal_bridge_angle 45)
+			(uuid "70d89bf7-8290-416b-b5a1-fe516c8d2f0e")
+		)
+	)
+	(footprint "moja_biblioteka:res_1206"
+		(layer "F.Cu")
 		(uuid "8550d853-17dc-4796-9f6a-0f9e4f370205")
-		(at 5 32.25)
+		(at 115 92.1)
 		(property "Reference" "R11"
 			(at -2 -3 0)
 			(unlocked yes)
@@ -6081,7 +6918,7 @@
 			(size 2 2)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 3 "DIODE_IN")
+			(net 78 "DIODE_SIGNAL")
 			(pintype "output")
 			(thermal_bridge_angle 45)
 			(uuid "cc438f47-0fcb-41bc-9741-eb47e965faeb")
@@ -6090,7 +6927,7 @@
 	(footprint "moja_biblioteka:screw_conector"
 		(layer "F.Cu")
 		(uuid "8875c572-d597-4b97-bcaf-21a602abe97e")
-		(at 42 48.05 -90)
+		(at 66.5 71.05 -90)
 		(property "Reference" "J1"
 			(at -1.2 -1.7 -90)
 			(unlocked yes)
@@ -6277,7 +7114,7 @@
 	(footprint "moja_biblioteka:res_1206"
 		(layer "F.Cu")
 		(uuid "8b227c10-cd0c-4cb7-98d9-e27419eeacb4")
-		(at 5 38.95)
+		(at 115 98.8)
 		(property "Reference" "R13"
 			(at -2 -3 0)
 			(unlocked yes)
@@ -6418,10 +7255,154 @@
 			(uuid "34054c37-82da-4625-b820-52f4ba95c4ae")
 		)
 	)
+	(footprint "moja_biblioteka:res_1206"
+		(layer "F.Cu")
+		(uuid "8e30b75b-740a-4306-80fd-28a941899bc0")
+		(at 115.5 45.425)
+		(property "Reference" "R16"
+			(at -2 -3 0)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(uuid "4ae840c3-3374-457d-b11a-c07b96110ce0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "Value" "400"
+			(at 0 1 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "21cd1378-d779-4fe7-b862-cd69c873c436")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Footprint" "moja_biblioteka:res_1206"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "663b02b7-95bb-412b-84fe-0fa96af89c7a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "80571991-d682-40ec-8e4b-fc70847812d0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cc3d2ef1-e518-428e-a76f-2ee3779851f5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/c6a77cce-fb93-4451-b9e4-7206dc7b1223")
+		(sheetname "Root")
+		(sheetfile "adc.kicad_sch")
+		(attr smd)
+		(fp_line
+			(start -4 -2)
+			(end 0 -2)
+			(stroke
+				(width 0.2)
+				(type default)
+			)
+			(layer "F.Cu")
+			(uuid "64a328a2-f363-40c3-9e00-8b1ac3bbbfc0")
+		)
+		(fp_line
+			(start -4 0)
+			(end -4 -2)
+			(stroke
+				(width 0.2)
+				(type default)
+			)
+			(layer "F.Cu")
+			(uuid "930e5e98-9c60-47ab-b9f2-0801a66d0ee3")
+		)
+		(fp_line
+			(start 0 -2)
+			(end 0 0)
+			(stroke
+				(width 0.2)
+				(type default)
+			)
+			(layer "F.Cu")
+			(uuid "309240bf-4b0f-47b4-a4be-4ca3bf63fdf4")
+		)
+		(fp_line
+			(start 0 0)
+			(end -4 0)
+			(stroke
+				(width 0.2)
+				(type default)
+			)
+			(layer "F.Cu")
+			(uuid "798fa867-987d-4b37-b184-04a4480a9d8b")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 2.5 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "b64a454c-3b76-4ca8-8f25-9a5c7c9be90f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd roundrect
+			(at 0 -1)
+			(size 2 2)
+			(layers "F.Cu" "F.Paste" "F.Mask")
+			(roundrect_rratio 0.25)
+			(net 76 "+5")
+			(pintype "input")
+			(thermal_bridge_angle 45)
+			(uuid "13eaacbd-323c-457f-b051-6206f83be776")
+		)
+		(pad "2" smd roundrect
+			(at -4 -1)
+			(size 2 2)
+			(layers "F.Cu" "F.Paste" "F.Mask")
+			(roundrect_rratio 0.25)
+			(net 50 "+3")
+			(pintype "output")
+			(thermal_bridge_angle 45)
+			(uuid "df27aa49-f019-4047-9ddb-3e5a2f615da4")
+		)
+	)
 	(footprint "moja_biblioteka:cap_1206"
 		(layer "F.Cu")
 		(uuid "9351feef-52c1-4d62-a151-c65d679bb6ad")
-		(at 66 55.65)
+		(at 72 53.15)
 		(property "Reference" "C1"
 			(at 0 -0.5 0)
 			(unlocked yes)
@@ -6564,7 +7545,7 @@
 	(footprint "moja_biblioteka:cap_1206"
 		(layer "F.Cu")
 		(uuid "96c611d5-86f5-4bc2-8d53-2f7904dd252b")
-		(at 64 43.65)
+		(at 71 44.15)
 		(property "Reference" "C3"
 			(at 0 -0.5 0)
 			(unlocked yes)
@@ -6707,7 +7688,7 @@
 	(footprint "moja_biblioteka:cap_1206"
 		(layer "F.Cu")
 		(uuid "9c1bddf6-c669-4f22-b82a-fa39204ac79e")
-		(at 20.75 2.55)
+		(at 55.5 45.25)
 		(property "Reference" "C14"
 			(at 0 -0.5 0)
 			(unlocked yes)
@@ -6832,7 +7813,7 @@
 			(size 1.5 2.5)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 55 "Net-(J2-Pin_1)")
+			(net 75 "Net-(D1-A1)")
 			(pintype "input")
 			(thermal_bridge_angle 45)
 			(uuid "fd722a62-047f-4982-ae4c-d07a9163afa4")
@@ -6851,7 +7832,7 @@
 	(footprint "moja_biblioteka:res_1206"
 		(layer "F.Cu")
 		(uuid "a2e2b767-6760-4755-8f5b-f5b5dee9140b")
-		(at -2 35.65)
+		(at 108 95.5)
 		(property "Reference" "R14"
 			(at -2 -3 0)
 			(unlocked yes)
@@ -6976,7 +7957,7 @@
 			(size 2 2)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 50 "+3")
+			(net 76 "+5")
 			(pintype "input")
 			(thermal_bridge_angle 45)
 			(uuid "f4ce89ef-551c-452b-bceb-3d678dc968d9")
@@ -6995,7 +7976,7 @@
 	(footprint "moja_biblioteka:cap_1206"
 		(layer "F.Cu")
 		(uuid "a3225c2f-1f4e-4752-9ba0-458d79b17e1b")
-		(at 53.5 61.65)
+		(at 72.5 63.65)
 		(property "Reference" "C2"
 			(at 0 -0.5 0)
 			(unlocked yes)
@@ -7138,7 +8119,7 @@
 	(footprint "moja_biblioteka:screw_conector"
 		(layer "F.Cu")
 		(uuid "a36e13c8-3051-426f-bced-cea81892274f")
-		(at 9.85 26.95)
+		(at 44.6 69.65)
 		(property "Reference" "J2"
 			(at -1.2 -1.7 0)
 			(unlocked yes)
@@ -7152,7 +8133,7 @@
 			)
 		)
 		(property "Value" "Screw_Terminal_01x02"
-			(at -0.7 1 0)
+			(at 74.55 18.15 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "f38fc578-3848-4276-8ac1-b846457f1e38")
@@ -7305,7 +8286,7 @@
 			(drill 1.5)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 55 "Net-(J2-Pin_1)")
+			(net 75 "Net-(D1-A1)")
 			(pinfunction "Pin_1")
 			(pintype "passive")
 			(uuid "0c5be10a-315f-49de-91f2-eae9f5897bd2")
@@ -7325,7 +8306,7 @@
 	(footprint "moja_biblioteka:cap_1206"
 		(layer "F.Cu")
 		(uuid "a80c9f58-6052-4016-9dd0-419048d37649")
-		(at 14.25 17.75)
+		(at 49 60.45)
 		(property "Reference" "C12"
 			(at 0 -0.5 0)
 			(unlocked yes)
@@ -7338,7 +8319,7 @@
 				)
 			)
 		)
-		(property "Value" "10n"
+		(property "Value" "1u"
 			(at 0 1 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -7466,10 +8447,154 @@
 			(uuid "5718a244-4ef9-4079-bb98-c05c07d258f0")
 		)
 	)
+	(footprint "moja_biblioteka:res_1206"
+		(layer "F.Cu")
+		(uuid "a9665eac-18d3-4e30-a3da-e6032cefbb94")
+		(at 115.5 55.475)
+		(property "Reference" "R19"
+			(at -2 -3 0)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(uuid "0521e81a-217b-4776-895d-4d31d789c2c3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "Value" "100"
+			(at 0 1 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "53ab35c5-7b81-424b-8fc3-b4cd79b54c85")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Footprint" "moja_biblioteka:res_1206"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e78fcbad-94f0-4a29-a40f-f144fa8e6572")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "74823c2a-45a3-456a-9f7a-0066916dccdf")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a5ab87ea-cc03-454c-8c74-cfdc0ff6e89b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/23d2bad2-8aa9-49df-b948-265d6dd31631")
+		(sheetname "Root")
+		(sheetfile "adc.kicad_sch")
+		(attr smd)
+		(fp_line
+			(start -4 -2)
+			(end 0 -2)
+			(stroke
+				(width 0.2)
+				(type default)
+			)
+			(layer "F.Cu")
+			(uuid "5c69e879-161e-4856-b9d1-7154e931be2c")
+		)
+		(fp_line
+			(start -4 0)
+			(end -4 -2)
+			(stroke
+				(width 0.2)
+				(type default)
+			)
+			(layer "F.Cu")
+			(uuid "192992d7-48c9-4094-9b48-a96dab694eb1")
+		)
+		(fp_line
+			(start 0 -2)
+			(end 0 0)
+			(stroke
+				(width 0.2)
+				(type default)
+			)
+			(layer "F.Cu")
+			(uuid "040c801d-a961-437b-9320-7ced1638e828")
+		)
+		(fp_line
+			(start 0 0)
+			(end -4 0)
+			(stroke
+				(width 0.2)
+				(type default)
+			)
+			(layer "F.Cu")
+			(uuid "d5a38244-6ea8-4364-85f1-4395c63c69a7")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 2.5 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "04f78d10-8330-4b7d-8cb6-5fbd06e0ef23")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd roundrect
+			(at 0 -1)
+			(size 2 2)
+			(layers "F.Cu" "F.Paste" "F.Mask")
+			(roundrect_rratio 0.25)
+			(net 79 "Net-(U4--)")
+			(pintype "input")
+			(thermal_bridge_angle 45)
+			(uuid "68781c41-13af-4d8e-8c2a-145b3f131ecd")
+		)
+		(pad "2" smd roundrect
+			(at -4 -1)
+			(size 2 2)
+			(layers "F.Cu" "F.Paste" "F.Mask")
+			(roundrect_rratio 0.25)
+			(net 2 "GND")
+			(pintype "output")
+			(thermal_bridge_angle 45)
+			(uuid "648d9185-6f6a-445d-9f7e-9d95659298e6")
+		)
+	)
 	(footprint "moja_biblioteka:cap_1206"
 		(layer "F.Cu")
 		(uuid "aa5d9c92-f59c-4ce3-b0bc-4a7569a0c755")
-		(at 14.25 21.55)
+		(at 49 64.25)
 		(property "Reference" "C13"
 			(at 0 -0.5 0)
 			(unlocked yes)
@@ -7482,7 +8607,7 @@
 				)
 			)
 		)
-		(property "Value" "10n"
+		(property "Value" "1u"
 			(at 0 1 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -7613,7 +8738,7 @@
 	(footprint "moja_biblioteka:res_1206"
 		(layer "F.Cu")
 		(uuid "b7a61c84-ecc5-43e3-8069-7eedd1556f60")
-		(at -2 39)
+		(at 108 98.85)
 		(property "Reference" "R15"
 			(at -2 -3 0)
 			(unlocked yes)
@@ -7757,7 +8882,7 @@
 	(footprint "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
 		(layer "F.Cu")
 		(uuid "b9db212b-71b6-48bc-a00f-9cc0a9387baf")
-		(at 30.225 16.015)
+		(at 64.975 58.715)
 		(descr "SOIC, 8 Pin (JEDEC MS-012AA, https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/soic_narrow-r/r_8.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py")
 		(tags "SOIC SO")
 		(property "Reference" "U7"
@@ -7994,7 +9119,7 @@
 			(size 1.95 0.6)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 50 "+3")
+			(net 76 "+5")
 			(pinfunction "Vin")
 			(pintype "power_in")
 			(uuid "c58cf746-7a9d-49ea-a374-41986c4db7ac")
@@ -8074,7 +9199,7 @@
 	(footprint "moja_biblioteka:res_1206"
 		(layer "F.Cu")
 		(uuid "c0480585-cadd-4550-bb8c-324556a5d519")
-		(at 5 28.9)
+		(at 115 88.75)
 		(property "Reference" "R10"
 			(at -2 -3 0)
 			(unlocked yes)
@@ -8218,7 +9343,7 @@
 	(footprint "moja_biblioteka:TPS7A49"
 		(layer "F.Cu")
 		(uuid "c0a40770-31f4-41b3-bc92-cb90eb93b190")
-		(at 19.611803 27.923606)
+		(at 54.361803 70.623606)
 		(property "Reference" "U9"
 			(at 5.388197 -1.423606 0)
 			(unlocked yes)
@@ -8354,7 +9479,7 @@
 			(size 1.4 0.45)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 50 "+3")
+			(net 76 "+5")
 			(pinfunction "OUT")
 			(pintype "output")
 			(thermal_bridge_angle 45)
@@ -8398,7 +9523,7 @@
 			(size 1.4 0.45)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 55 "Net-(J2-Pin_1)")
+			(net 75 "Net-(D1-A1)")
 			(pinfunction "EN")
 			(pintype "input")
 			(thermal_bridge_angle 45)
@@ -8431,17 +9556,161 @@
 			(size 1.4 0.45)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 55 "Net-(J2-Pin_1)")
+			(net 75 "Net-(D1-A1)")
 			(pinfunction "IN")
 			(pintype "input")
 			(thermal_bridge_angle 45)
 			(uuid "47768e21-b43c-4a23-9a45-055108f68216")
 		)
 	)
+	(footprint "moja_biblioteka:res_1206"
+		(layer "F.Cu")
+		(uuid "c885b88e-5d64-4313-a608-2ac09c687e66")
+		(at 115.5 48.775)
+		(property "Reference" "R17"
+			(at -2 -3 0)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(uuid "aa858d04-40f4-40c6-82d3-de865d87bf6f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "Value" "470"
+			(at 0 1 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "9e52b35b-4d0d-4aff-971f-124a8197335c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Footprint" "moja_biblioteka:res_1206"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f89551f4-dbd4-4409-8440-4557e2d1b67b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "53790a1c-91bc-4d5b-9324-6d7f86d75936")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "88b0337a-936c-4b84-9064-9fdbd6c23e3f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/cc1005b0-3ca3-46cc-8c26-f7e373bfed7e")
+		(sheetname "Root")
+		(sheetfile "adc.kicad_sch")
+		(attr smd)
+		(fp_line
+			(start -4 -2)
+			(end 0 -2)
+			(stroke
+				(width 0.2)
+				(type default)
+			)
+			(layer "F.Cu")
+			(uuid "497cbc72-4155-4554-85d1-5ad2a50c8134")
+		)
+		(fp_line
+			(start -4 0)
+			(end -4 -2)
+			(stroke
+				(width 0.2)
+				(type default)
+			)
+			(layer "F.Cu")
+			(uuid "af5639d4-5c04-4a1b-b0d4-092a2f1da6fe")
+		)
+		(fp_line
+			(start 0 -2)
+			(end 0 0)
+			(stroke
+				(width 0.2)
+				(type default)
+			)
+			(layer "F.Cu")
+			(uuid "713ec3ed-bfe7-4125-b225-063d258e168b")
+		)
+		(fp_line
+			(start 0 0)
+			(end -4 0)
+			(stroke
+				(width 0.2)
+				(type default)
+			)
+			(layer "F.Cu")
+			(uuid "708ceb51-a5ba-43b7-a1c1-6d2a499e7def")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 2.5 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "ce7382b6-5904-48d2-8e6e-9587f6b5da40")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd roundrect
+			(at 0 -1)
+			(size 2 2)
+			(layers "F.Cu" "F.Paste" "F.Mask")
+			(roundrect_rratio 0.25)
+			(net 77 "Net-(D2-K)")
+			(pintype "input")
+			(thermal_bridge_angle 45)
+			(uuid "8db4739c-8212-47bf-b638-ea18f99b29fd")
+		)
+		(pad "2" smd roundrect
+			(at -4 -1)
+			(size 2 2)
+			(layers "F.Cu" "F.Paste" "F.Mask")
+			(roundrect_rratio 0.25)
+			(net 2 "GND")
+			(pintype "output")
+			(thermal_bridge_angle 45)
+			(uuid "e3912049-054e-46cd-9e54-4717791a8cc3")
+		)
+	)
 	(footprint "moja_biblioteka:THS4281"
 		(layer "F.Cu")
 		(uuid "ced4adcf-9b79-4948-8609-5773f3612fbd")
-		(at 19.611803 23.661803)
+		(at 54.361803 66.361803)
 		(property "Reference" "U8"
 			(at -0.8 -2.1 0)
 			(unlocked yes)
@@ -8616,7 +9885,7 @@
 			(size 1.1 0.6)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 50 "+3")
+			(net 76 "+5")
 			(pinfunction "V+")
 			(pintype "input")
 			(uuid "4e625459-8e99-4c39-b5b7-10c1a9833769")
@@ -8625,7 +9894,7 @@
 	(footprint "moja_biblioteka:cap_1206"
 		(layer "F.Cu")
 		(uuid "d25ee1a0-66ac-4a44-8616-ed68127d99b9")
-		(at 43.5 83.25)
+		(at 65.75 90.475)
 		(property "Reference" "C7"
 			(at 0 -0.5 0)
 			(unlocked yes)
@@ -8689,7 +9958,6 @@
 				)
 			)
 		)
-		(path "/d51da528-016b-402d-90c3-daa84abe0575")
 		(sheetname "Root")
 		(sheetfile "adc.kicad_sch")
 		(attr smd)
@@ -8769,7 +10037,7 @@
 	(footprint "Package_TO_SOT_SMD:SOT-23"
 		(layer "F.Cu")
 		(uuid "d2fd2e11-c8d1-45d0-ad43-74f2f77da251")
-		(at 20.545 33.22)
+		(at 55.295 75.92)
 		(descr "SOT, 3 Pin (https://www.jedec.org/system/files/docs/to-236h.pdf variant AB), generated with kicad-footprint-generator ipc_gullwing_generator.py")
 		(tags "SOT TO_SOT_SMD")
 		(property "Reference" "U3"
@@ -9036,7 +10304,7 @@
 	(footprint "moja_biblioteka:res_1206"
 		(layer "F.Cu")
 		(uuid "d8228d71-ee5e-4795-ba69-1593dc86ea7f")
-		(at 5 35.6)
+		(at 115 95.45)
 		(property "Reference" "R12"
 			(at -2 -3 0)
 			(unlocked yes)
@@ -9161,7 +10429,7 @@
 			(size 2 2)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 50 "+3")
+			(net 76 "+5")
 			(pintype "input")
 			(thermal_bridge_angle 45)
 			(uuid "2031a639-f48d-4672-96da-08b9e5fde26b")
@@ -9180,7 +10448,7 @@
 	(footprint "moja_biblioteka:cap_1206"
 		(layer "F.Cu")
 		(uuid "ed91059d-d8b7-4340-8146-7b90ab2e380c")
-		(at 14.25 2.55)
+		(at 49 45.25)
 		(property "Reference" "C8"
 			(at 0 -0.5 0)
 			(unlocked yes)
@@ -9324,7 +10592,7 @@
 	(footprint "moja_biblioteka:cap_1206"
 		(layer "F.Cu")
 		(uuid "f3cb3a96-7526-4cfc-a89d-026f820c4da7")
-		(at 14.25 6.35)
+		(at 49 49.05)
 		(property "Reference" "C9"
 			(at 0 -0.5 0)
 			(unlocked yes)
@@ -9388,7 +10656,6 @@
 				)
 			)
 		)
-		(path "/b95e9297-a55b-4cb7-9eb3-6a18a1cbce8c")
 		(sheetname "Root")
 		(sheetfile "adc.kicad_sch")
 		(attr smd)
@@ -9468,7 +10735,7 @@
 	(footprint "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
 		(layer "F.Cu")
 		(uuid "f50cbac8-841e-48c6-b1bf-77ecca65d4c5")
-		(at 30.225 9.435)
+		(at 64.975 52.135)
 		(descr "SOIC, 8 Pin (JEDEC MS-012AA, https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/soic_narrow-r/r_8.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py")
 		(tags "SOIC SO")
 		(property "Reference" "U6"
@@ -9754,7 +11021,7 @@
 			(size 1.95 0.6)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 50 "+3")
+			(net 76 "+5")
 			(pinfunction "V+")
 			(pintype "power_in")
 			(uuid "fb63b0a2-ed3a-4c62-a339-70a9acb119be")
@@ -9784,7 +11051,7 @@
 	(footprint "moja_biblioteka:cap_1206"
 		(layer "F.Cu")
 		(uuid "fb2954b4-3344-4ce6-ace3-2b5c9ff02c46")
-		(at 43.5 79.45)
+		(at 65.75 86.675)
 		(property "Reference" "C6"
 			(at 0 -0.5 0)
 			(unlocked yes)
@@ -12117,7 +13384,7 @@
 	(footprint "moja_biblioteka:res_1206"
 		(layer "F.Cu")
 		(uuid "ff476766-5c66-4b67-b2fe-7395b1e6069a")
-		(at 54.25 75.2)
+		(at 76.5 82.425)
 		(property "Reference" "R1"
 			(at -2 -3 0)
 			(unlocked yes)
@@ -12181,7 +13448,6 @@
 				)
 			)
 		)
-		(path "/a44bfb8a-1934-4256-b659-60f2bf7733fa")
 		(sheetname "Root")
 		(sheetfile "adc.kicad_sch")
 		(attr smd)
@@ -12257,5 +13523,16 @@
 			(thermal_bridge_angle 45)
 			(uuid "644380c5-c5e8-43e3-a8d3-bbc53421d145")
 		)
+	)
+	(gr_rect
+		(start 38.5 37)
+		(end 130.5 106.5)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill none)
+		(layer "Edge.Cuts")
+		(uuid "316364cc-a824-47e5-843b-a8192298f471")
 	)
 )
